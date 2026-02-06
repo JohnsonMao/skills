@@ -8,14 +8,10 @@ export interface VendorSkillMeta {
  * Repositories to clone as submodules and generate skills from source
  */
 export const submodules = {
-  vue: 'https://github.com/vuejs/docs',
-  nuxt: 'https://github.com/nuxt/nuxt',
-  vite: 'https://github.com/vitejs/vite',
-  unocss: 'https://github.com/unocss/unocss',
   pnpm: 'https://github.com/pnpm/pnpm.io',
-  pinia: 'https://github.com/vuejs/pinia',
+  tailwindcss: 'https://github.com/tailwindlabs/tailwindcss',
+  vite: 'https://github.com/vitejs/vite',
   vitest: 'https://github.com/vitest-dev/vitest',
-  vitepress: 'https://github.com/vuejs/vitepress',
 }
 
 /**
@@ -29,11 +25,24 @@ export const vendors: Record<string, VendorSkillMeta> = {
       slidev: 'slidev',
     },
   },
-  'vueuse': {
+  'superpowers': {
     official: true,
-    source: 'https://github.com/vueuse/skills',
+    source: 'https://github.com/obra/superpowers',
     skills: {
-      'vueuse-functions': 'vueuse-functions',
+      'brainstorming': 'sp-brainstorming',
+      'dispatching-parallel-agents': 'sp-dispatching-parallel-agents',
+      'executing-plans': 'sp-executing-plans',
+      'finishing-a-development-branch': 'sp-finishing-a-development-branch',
+      'receiving-code-review': 'sp-receiving-code-review',
+      'requesting-code-review': 'sp-requesting-code-review',
+      'subagent-driven-development': 'sp-subagent-driven-development',
+      'systematic-debugging': 'sp-systematic-debugging',
+      'test-driven-development': 'sp-test-driven-development',
+      'using-git-worktrees': 'sp-using-git-worktrees',
+      'using-superpowers': 'sp-using-superpowers',
+      'verification-before-completion': 'sp-verification-before-completion',
+      'writing-plans': 'sp-writing-plans',
+      'writing-skills': 'sp-writing-skills',
     },
   },
   'tsdown': {
@@ -41,14 +50,6 @@ export const vendors: Record<string, VendorSkillMeta> = {
     source: 'https://github.com/rolldown/tsdown',
     skills: {
       tsdown: 'tsdown',
-    },
-  },
-  'vuejs-ai': {
-    source: 'https://github.com/vuejs-ai/skills',
-    skills: {
-      'vue-best-practices': 'vue-best-practices',
-      'vue-router-best-practices': 'vue-router-best-practices',
-      'vue-testing-best-practices': 'vue-testing-best-practices',
     },
   },
   'turborepo': {
@@ -61,14 +62,17 @@ export const vendors: Record<string, VendorSkillMeta> = {
   'web-design-guidelines': {
     source: 'https://github.com/vercel-labs/agent-skills',
     skills: {
+      'composition-patterns': 'composition-patterns',
+      'react-best-practices': 'react-best-practices',
+      'react-native-skills': 'react-native-skills',
       'web-design-guidelines': 'web-design-guidelines',
     },
   },
 }
 
 /**
- * Hand-written skills with Anthony Fu's preferences/tastes/recommendations
+ * Hand-written skills with Johnson Mao's preferences/tastes/recommendations
  */
 export const manual = [
-  'antfu',
+  'mao',
 ]

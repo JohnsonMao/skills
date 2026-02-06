@@ -1,6 +1,8 @@
+.cursorindexingignore
 .cache
 .DS_Store
 .idea
+.specstory
 *.log
 *.tgz
 coverage
